@@ -1,0 +1,43 @@
+/* 
+font-family: 'Arapey', serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'BodyGrotesqueFit', sans-serif;
+font-family: 'OhnoBlazeFace', sans-serif;
+*/
+
+/* Style reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Add external fonts */
+@font-face {
+  font-family: "BodyGrotesqueFit";
+  src: 
+		url(fonts/BodyGrotesqueFitRegular.woff2) format('woff2'),
+    url(fonts/BodyGrotesqueFitRegular.woff) format('woff'),
+    url(fonts/BodyGrotesqueFitRegular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: "OhnoBlazeFace";
+  src: 
+		url(fonts/OhnoBlazeface36.woff2) format('woff2'),
+    url(fonts/OhnoBlazeface36.woff) format('woff'),
+    url(fonts/OhnoBlazeface36.ttf) format('truetype');
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+}
+
+.hero-image {
+  width: 20%;
+}
+
+.project-tile-image {
+  width: 50%;
+}
