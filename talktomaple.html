@@ -289,7 +289,7 @@
       </section>
 
       <!-- Defining the MVP Section -->
-      <section>
+      <section class="talktomaple-define-mvp">
         <div class="project-text-block">
           <h4 class="sub-heading">Define</h4>
           <h3>Defining the scope of the MVP</h3>
@@ -406,7 +406,540 @@
           </figcaption>
         </div>
         <!-- Integrating A.I -->
-        <div></div>
+        <div class="project-text-block">
+          <h3>Integrating the A.I</h3>
+          <br />
+          <p>
+            While integrating ChatGPT into our application, we considered the
+            prompts and AI responses. Initially, we identified potential journal
+            prompt areas based on our research. To validate and refine these
+            prompts, we sought feedback from mental health professionals. After
+            careful consideration, we settled on an initial set of prompts:
+          </p>
+        </div>
+        <div class="project-image-block">
+          <img
+            src="images/projects/talktomaple/6_maple_prompts.jpg"
+            alt="Journl Entry Prompts"
+          />
+          <figcaption>
+            Summary of journal prompts based on feedbak from mental health
+            professionals
+          </figcaption>
+        </div>
+        <div class="project-text-block">
+          <p>
+            To gauge user engagement with the AI, we also
+            <strong>conducted an experiment</strong>> involving mental health
+            professionals and users. The AI was hosted in a web browser, and we
+            provided pre-set prompts from the perspective of our chosen digital
+            companion; a puppy named Maple.<br />
+
+            From the experiment, we observed that users tended to
+            <strong>disengage</strong>> after approximately 4-5 exchanges. The
+            key contributor being the AI's repetitive nature and excessive focus
+            on asking "Why" repeatedly. This reinforced the decision to pursue a
+            staged journaling approach instead of the WhatsApp conversational
+            style. It also provided insights for improving our prompt
+            engineering.<br />
+
+            Additionally, mental health professionals emphasised the importance
+            of incorporating a <strong>red flag check</strong>. They stressed
+            that if a user expresses self-harm or engages in extremely sensitive
+            or harmful discussion, the AI needs to be able to recognise its
+            limitations and provide appropriate resources.
+          </p>
+        </div>
+        <!-- Red flag check -->
+        <div class="project-text-block">
+          <h3>Introducing a 'red flag' check</h3>
+          <br />
+          <p>
+            Ensuring ethical practices and prioritising the well-being of our
+            users were key considerations throughout this process. To address
+            this, we implemented a "red flag" system that allowed the AI to
+            respond appropriately when users discussed serious issues like
+            <strong>suicide and self-harm</strong>>. In such cases we wanted to
+            stop the conversation from going further and serve the user with
+            some helpful resources for seeking help.<br />
+
+            Initially, we attempted to create our own capture system based on
+            keywords, but we discovered that some instances slipped through
+            undetected. Fortunately, OpenAI soon introduced their own
+            auto-moderation feature, which captured most instances of concern.
+            However, through QA testing we found there were still a few cases
+            that went unnoticed.<br />
+
+            As a result, we decided on a <strong>combination approach</strong>.
+            We utilised OpenAI's auto-moderation system alongside our dedicated
+            keyword capture. This proved more effective and allowed us to
+            continually build on the keyword list to address any potentially
+            missed cases in the future. By combining these approaches, we were
+            able to better ensure <strong>user safety</strong> while maintaining
+            control over the moderation process.
+          </p>
+        </div>
+      </section>
+
+      <!-- Launching the MVP Section -->
+      <section class="talktomaple-launching-mvp">
+        <div class="project-text-block">
+          <h4 class="sub-heading">Develop</h4>
+          <h3>Launching the MVP</h3>
+          <p>
+            We spent 3 weeks defining, designing, building and launching the MVP
+            of our app. Once deployed to the app stores we ran some targeted
+            facebook ads to attract our first cohort of users and begin getting
+            some real customer feedback.
+          </p>
+        </div>
+        <!-- MVP screen captures -->
+        <div class="project-screen-capture">
+          <div class="screen-capture-block">
+            <img
+              src="images/projects/talktomaple/7_maple_mvp1.png"
+              alt="Journal Prompt Selection Screen"
+            />
+            <p>Journal Prompt Select</p>
+          </div>
+          <div class="screen-capture-block">
+            <img
+              src="images/projects/talktomaple/8_maple_mvpvideo.gif"
+              alt="Bite-sized Journal Session"
+            />
+            <p>Bite-sized Journal Session</p>
+          </div>
+        </div>
+        <div class="project-text-block">
+          <p>
+            We had positive early signals, with a low Cost Per Click (CPC),
+            showing that our <strong>ad was effective</strong>, and we gained
+            <strong>85 users</strong> in the first week of our MVP being live
+            (users in this scenario = people that downloaded, opened and
+            completed at least 1 journaling session within the app).<br />
+
+            We had achieved our initial goal of launching an app, and proved
+            that our value prop did convert and we could get users to download
+            and use the app. There was interest! We next sought to focus on
+            improving retention and engagement, as we saw a steep decline in
+            usage after day 1.
+          </p>
+        </div>
+        <div class="project-image-block">
+          <img
+            src="images/projects/talktomaple/9_maple_mvpretention.jpg"
+            alt="MVP Retention Stastics"
+          />
+          <figcaption>
+            Percentage of users that completed a journal mission vs. # of days
+            after first install
+          </figcaption>
+        </div>
+        <!-- Open A.I Outages -->
+        <div class="project-text-block">
+          <h3>Managing Open A.I outages... lots of them</h3>
+          <p>
+            During the initial days of our MVP launch, ChatGPT experienced
+            frequent outages and errors. Users were often affected, receiving
+            confusing error messages that deterred them from returning to the
+            app. This created an overall poor user experience.<br />
+
+            To address this issue, we added a fallback mechanism with a
+            hardcoded message that aligned with the brand and companion. This
+            approach seemed to have a positive impact on user retention; the
+            inclusion of a message from the companion saying
+            <em
+              >"I'm just having a nap, puppies need their beauty sleep. Come
+              back soon!"</em
+            >
+            actually encouraged 2 users to return to the app the following day
+            asking Maple the companion <em>"Are you awake yet?"</em>. 🐶
+          </p>
+        </div>
+        <!-- Learnings from the MVP -->
+        <div class="project-text-block">
+          <h3>Valuable learnings from the MVP</h3>
+          <p>
+            The MVP provided some valuable feedback on ways to improve the
+            experience to help improve engagement and retention:
+          </p>
+          <br />
+          <ul>
+            <li>
+              <strong>Continued conversations</strong><br />
+              Based on user data, we discovered that users wanted to continue
+              their conversations with the AI by starting a new prompt but
+              continuing from a previous completed entry. We also observed that
+              users were typing out longer entries, indicating a desire for
+              deeper engagement. These insights led us to the idea of
+              introducing a 3-part journaling format instead of a single page.
+              This approach allows users to have a more fulfilling conversation
+              with the AI while still maintaining a staged approach. We
+              considered the findings from our earlier experiment, which
+              indicated that users tended to disengage after 4-5
+              back-and-forths. By limiting the engagement to 3 parts, we aim to
+              keep journaling exciting and engaging each time.
+            </li>
+            <br />
+            <li>
+              <strong>Improve accessibility</strong><br />
+              Supervised user acceptance testing highlighted difficulties in
+              distinguishing buttons, text fields, and other elements within the
+              app. To address this, I implemented stronger borders and adjusted
+              colours to enhance accessibility.
+            </li>
+            <br />
+            <li>
+              <strong>Tweak journal prompts</strong><br />
+              Some users indicated that the single-word journal prompts were
+              vague. To address this, we revised the prompts to use "I"
+              statements that clearly convey what the user can expect from each
+              prompt (e.g., "I want to reflect on something" instead of simply
+              "Reflect").
+            </li>
+            <br />
+            <li>
+              <strong>Increase visibility of system status</strong><br />
+              We saw that users were unintentionally pressing the Submit button
+              multiple times, leading to duplicated API calls and responses. We
+              added notification text upon pressing the button, informing users
+              of the slight delay, and disabled the button after the first press
+              to prevent multiple submissions.
+            </li>
+            <br />
+            <li>
+              <strong>Submit button location</strong><br />
+              Users were typing longer messages than anticipated, causing the
+              text field to expand and push the UI at the top of the screen out
+              of sight. To address this, I moved the submission button to the
+              bottom of the text entry box, ensuring it remains visible to users
+              immediately after they finish typing, eliminating the need for
+              scrolling back up.
+            </li>
+            <br />
+          </ul>
+          <p>
+            Fleshing these things out further resulted in the following
+            wireframes:
+          </p>
+        </div>
+        <div class="project-image-block">
+          <img
+            src="images/projects/talktomaple/10_maple_newjournaling.jpg"
+            alt="Wireframes of the above listed improvements"
+          />
+          <figcaption>
+            Wireframes of the 3 part journaling and other changes based on
+            feedback from the MVP
+          </figcaption>
+        </div>
+        <!-- Different LLM's -->
+        <div class="project-text-block">
+          <h3>The battle of the LLM's</h3>
+          <br />
+          <p>
+            During the process, a new release of ChatGPT occurred, which
+            prompted us to assess whether we should switch our LLM or stick with
+            the existing one, considering our focus on user experience.<br />
+
+            We initially utilised ChatGPT 3 DaVinci, as it was the latest
+            version that allowed for fine-tuning and incorporating our own
+            datasets. However, ChatGPT 3.5 Turbo became available, promising
+            better conversational prowess (without fine-tuning).<br />
+
+            After conducting internal testing, we discovered that ChatGPT 3.5
+            Turbo generated more <strong>engaging</strong> and on-brand
+            responses, exhibiting a conversational and personable tone. However,
+            Turbo didn't strictly adhere to instructions during the final
+            journaling stage, continuing the conversation indefinitely. On the
+            other hand, DaVinci performed better in this aspect but was less
+            effective in the earlier journaling stages, where we sought a more
+            conversational approach with the ability to respond to multiple
+            threads within a single response.<br />
+
+            To <strong>strike a balance</strong> between conversational
+            engagement and summarisation, we decided to implement a hybrid
+            approach. We used ChatGPT 3.5 Turbo for the first two parts of the
+            journaling process and ChatGPT 3 DaVinci for the final part, which
+            required a concise and summarised conversation.
+          </p>
+        </div>
+        <!-- User Sentiment -->
+        <div class="project-text-block">
+          <h3>Understanding user sentiment</h3>
+          <br />
+          <p>
+            To gather feedback on user sentiment and evaluate the
+            <strong>effectiveness</strong> of our journal prompts, we
+            implemented a simple 3-point feedback scale. This allowed us to keep
+            the feedback process easy to understand for the user, and remain
+            fun, light-hearted and not feel like a chore following their
+            journaling.<br />
+
+            We made the decision to have the feedback options be represented as
+            <strong>emoji's</strong> - the Talk to Maple brand is fun and I
+            wanted giving feedback to feel fun too. We also opted for a forced
+            action, with the emoji selections becoming the only way to proceed
+            to the rewards screen following their journal mission.<br />
+
+            Through researching other feedback mechanisms, I saw that this was a
+            common design pattern, but given the change in UI to a key screen,
+            we were prepared to revert the change if we saw any significant drop
+            in journal completions following the launch of the next release.<br />
+          </p>
+        </div>
+        <div class="project-image-block">
+          <img
+            src="images/projects/talktomaple/11_maple_usersentiment.png"
+            alt="Wireframes of the screen to capture user sentiment"
+          />
+          <figcaption>
+            Wireframes of the Emoji feedback capture screens
+          </figcaption>
+        </div>
+      </section>
+
+      <!-- Final screens -->
+      <section class="talktomaple-deliver">
+        <div class="project-text-block">
+          <h4>Deliver</h4>
+          <h3>Bringing it to life</h3>
+          <p>
+            Learning from our MVP, and having gained proficiency in building
+            apps in Flutterflow, we were able to build the next version of Talk
+            to Maple at speed. This is version deployed in the app stores:
+          </p>
+        </div>
+        <div class="project-screen-capture">
+          <div class="screen-capture-block">
+            <img
+              src="images/projects/talktomaple/12_maple_welcome.gif"
+              alt="Welcome Screen GIF"
+            />
+            <p>Welcome Screen</p>
+          </div>
+          <div class="screen-capture-block">
+            <img
+              src="images/projects/talktomaple/13_maple_homescreen.gif"
+              alt="Home Screen GIF"
+            />
+            <p>Home Screen + Companion</p>
+          </div>
+          <div class="screen-capture-block">
+            <img
+              src="images/projects/talktomaple/14_maple_dailymissions.gif"
+              alt="Daily Missions Screen"
+            />
+            <p>Daily Missions through to Journal prompt screen</p>
+          </div>
+          <div class="screen-capture-block">
+            <img
+              src="images/projects/talktomaple/15_maple_promptscreen.jpg"
+              alt="Journal Prompt Screen"
+            />
+            <p>Journal Prompt Screen</p>
+          </div>
+          <div class="screen-capture-block">
+            <img
+              src="images/projects/talktomaple/16_maple_responsetime.jpg"
+              alt="Response time notification on screen"
+            />
+            <p>Response time notification after submission</p>
+          </div>
+          <div class="screen-capture-block">
+            <img
+              src="images/projects/talktomaple/17_maple_redflag.jpg"
+              alt="Red flag capture message"
+            />
+            <p>Red flag capture message</p>
+          </div>
+          <div class="screen-capture-block">
+            <img
+              src="images/projects/talktomaple//18_maple_threepartjournal.gif"
+              alt="3-part journalling workflow"
+            />
+            <p>3-part Journal Mission in action</p>
+          </div>
+          <div class="screen-capture-block">
+            <img
+              src="images/projects/talktomaple/19_maple_usersentiment.gif"
+              alt="User sentiment capture screen"
+            />
+            <p>User sentiment capture and receiving rewards</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Final outcome and reflections -->
+      <section class="talktomaple-outcome">
+        <div class="project-text-block">
+          <h4 class="sub-heading">Outcome</h4>
+          <h3>Retention rate uplift</h3>
+          <p>
+            Following the new release of Talk to Maple, we saw a greatly
+            improved Day 1 & Day 2 retention rate (characterised by completing a
+            journaling mission), when compared to our MVP release:
+          </p>
+        </div>
+        <div class="project-image-block">
+          <img
+            src="images/projects/talktomaple/20_maple_retentionuplift.jpg"
+            alt="Up lift in retention rate graph"
+          />
+          <figcaption>
+            Percentage of users that completed a journal mission vs. # of days
+            after first install - MVP vs. V1
+          </figcaption>
+        </div>
+        <div class="project-text-block">
+          <p>
+            This is great <strong>evidence</strong> that the combination of an
+            improved journaling experience, UI and gamification really helped
+            move the needle on user engagement. <br />
+
+            Note: There is a slight dip in Day 0 retention for V1 versus the
+            MVP. This can be attributed to changes made in the onboarding flow,
+            in which the User was asked to do a full journal. This increased the
+            speed they reached their 'Aha' moment, but also made it less likely
+            to go to do an additional journal entry that same day.
+          </p>
+        </div>
+        <!-- User Sentiment Results -->
+        <div class="project-text-block">
+          <h3>User sentiment in the right direction</h3>
+          <p>
+            Our results of our basic user sentiment analysis also showed that
+            <strong
+              >95% of journal sessions resulted in the user feeling either the
+              same or better</strong
+            >, with 38% recording better. This is a great early indicator to
+            show that Talk to Maple isn't doing harm and in fact on the right
+            path to boosting our users mood. Although to be sure there is still
+            further work to do in this space. <br />
+
+            With the sentiment analysis being so simplified, it's difficult to
+            understand if the high number of users reporting 'Same' is due to
+            actually feeling the same, or if the other options of 'Better' or
+            'Worse' are too broad or ambiguous that they don't fit what the user
+            is actually feeling. Widening this to include a broader range of
+            emotions or switching the format up would help us get a better gauge
+            on this stat.<br />
+          </p>
+        </div>
+        <!-- User Feedback -->
+        <div class="project-text-block">
+          <h3>Great user feedback</h3>
+          <p>
+            We had also included a short in-app feedback form for users to
+            optionally complete, and we received some incredible feedback,
+            reinforcing again that we were heading in the right direction:
+          </p>
+        </div>
+        <div class="project-image-block">
+          <img
+            src="images/projects/talktomaple/21_maple_feedback.jpg"
+            alt="User feedback about the Talk to Maple app"
+          />
+        </div>
+        <!-- What's next -->
+        <div class="project-text-block">
+          <h3>What's next?</h3>
+          <p>
+            Whilst there have been positive early signals for Talk to Maple,
+            there's definitely still a long way to go. Engagement and retention
+            will continue to be the key focus metrics, which could be impacted
+            through things such as:
+          </p>
+          <br />
+          <ul>
+            <li>
+              <strong>Push Notifications</strong> - to remind users to complete
+              their daily missions or journal entries to further optimise
+              retention from Day 3 onwards.
+            </li>
+            <br />
+            <li>
+              <strong>More Content</strong> - through introducing things like
+              more journal prompts, better rewards, further customisation and
+              more interactions with the companion. Further gamification through
+              things like leaderboards and friendly competition to drive
+              extrinsic motivation are also things we'd be looking to explore in
+              the future.
+            </li>
+            <br />
+            <li>
+              <strong>Social Accountability</strong> - is a huge driver of habit
+              formation; a great example is having a gym buddy. I hypothesise
+              that introducing things like the ability to invite friends, send
+              rewards to friends for completing a mission and supporting friends
+              to stay accountable through in-app actions would help drive
+              retention and engagement.
+            </li>
+            <br />
+            <li>
+              <strong>Further user sentiment analysis</strong> - in particular,
+              against each journal prompt and see if there's a correlation
+              between how people feel after journaling and which prompt they've
+              chosen. This can help inform what kinds of prompts might be good
+              additions (or even which should be removed)
+            </li>
+          </ul>
+        </div>
+        <!-- Final Reflections -->
+        <div class="project-text-block">
+          <h3>Reflections</h3>
+          <p>
+            As a team we had to opt out of the remainder of the program for
+            personal reasons, however we will continue to work on Talk to Maple
+            over time as a passion project.<br />
+
+            The Antler program was incredibly intense and high pressure, and
+            there were so many learnings that came out of it, but one of the big
+            ones would have to be how invaluable having the
+            <strong>right data</strong> is. As a team we were data geeks (with
+            one co-founder even being a data scientist by trade), so we took the
+            time to track as many key metrics as we could from the get go.<br />
+
+            This definitely took a bit more time and effort, but turned out to
+            be one of the best decisions we made. This helped not only build our
+            credibility with the investment team but above all helped us make
+            the <strong>best decisions possible</strong> for our app and our
+            users.<br />
+
+            With such intense timelines we also had to prioritise our time; each
+            day we focussed on the number one highest impact item we could be
+            doing that takes us <strong>towards our goal</strong> of retained
+            and engaged users. Having this clear north star helped us
+            <strong>make trade-offs ruthlessly</strong> and move the needle as
+            far as possible in the time we had. It did mean that other (also
+            important) things got deprioritised in this early stage, such as
+            marketing, acquisition etc.<br />
+          </p>
+        </div>
+        <div class="project-image-block">
+          <img
+            src="images/projects/talktomaple/22_maple_teampicture.jpeg"
+            alt="Team picture of 2/3 of the Talk to Maple founding team"
+          />
+          <figcaption>
+            2/3's of the Talk to Maple team; my partner and I. Plus our dog
+            Maple, the inspiration for our mascot.
+          </figcaption>
+        </div>
+      </section>
+
+      <!-- View More Section -->
+      <section class="view-more">
+        <div class="view-more-heading">
+          <h2>View more</h2>
+        </div>
+        <div class="view-more-tile">
+          <img
+            src="images/projects/atonce/0_atonce_hero.jpg"
+            alt="At Once project screenshots"
+          />
+          <p>Re-designing At Once's marketplace listing upload feature</p>
+        </div>
       </section>
     </main>
 
