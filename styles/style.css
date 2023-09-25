@@ -28,15 +28,223 @@ font-family: 'OhnoBlazeFace', sans-serif;
     url(fonts/OhnoBlazeface36.ttf) format('truetype');
 }
 
+/* Global Styles */
+
+/* Fonts */
+
+html {
+  font-size: 16px;
+}
+
+p {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1.9;
+  letter-spacing: 0.02em;
+}
+
+h1, h2 {
+  font-family: 'OhnoBlazeFace', sans-serif;
+  font-size: 2.25rem;
+}
+
+h3, li {
+  font-family: 'BodyGrotesqueFit', sans-serif;
+}
+
+h3 {
+  font-size: 1.56rem;
+}
+
+figcaption {
+  font-family: 'Poppins', sans-serif;
+  color: dark gray;
+  font-size: 0.8rem;
+}
+
+.sub-heading {
+  font-family: 'BodyGrotesqueFit', sans-serif;
+  font-size: 0.75rem;
+  line-height: 1.6;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+}
+
+/* Links */
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h1 a:hover {
+  text-decoration: none;
+}
+
+/* Buttons */
+
+button {
+  font-family: 'BodyGrotesqueFit', sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  padding: 0.5rem 0.75rem;
+  background: white;
+  border-radius: 5px;
+  border: black 1px solid;
+  transition: 400ms;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #FDB066;
+  translate: 4px 4px;
+  box-shadow: -4px -4px black;
+}
+
+button:active {
+  background-color: #F7FF9F;
+  translate: 4px 4px;
+  box-shadow: -4px -4px black;
+}
+
+button a:hover {
+  text-decoration: none;
+}
+
+/* Header Nav Bar Styling */
+
+header {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+  width: 70%;
+  margin: 0 auto;
+}
+
+header div {
+  display: flex;
+}
+
+header div h1, header div h2 {
+  font-size: 1.5rem;
+  padding: 0.5rem
+}
+
+nav {
+  padding: 0.5rem
+}
+
+nav li {
+  display: flex
+}
+
 .logo {
-  width: 50px;
-  height: 50px;
+  width: 3rem;
+  padding: 0.5rem
+}
+
+/* Main Sections */
+
+main {
+  margin: 0 auto;
+}
+
+/* Home Page Backgrounds */
+
+.home-wrapper {
+  background: #E9E1FD;
+}
+
+main .home-wrapper {
+  border-bottom: black solid 1px;
+}
+
+/* Hero Section */
+
+.hero {
+  width: 70%;
+  margin: 0 auto;
+  height: 75vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center
 }
 
 .hero-image {
-  width: 20%;
+  width: 30vw;
+  border-bottom: 2px solid white;
+  border-radius: 50%;
+  margin: 3rem;
 }
 
-.project-tile-image {
-  width: 50%;
+.intro h2 {
+  font-size: 3.5rem;
+  margin-bottom: 0.8rem;
+  line-height: 1.1;
 }
+
+.intro p {
+  margin-bottom: 2rem;
+  font-size: 1.4rem;
+  line-height: 1.5;
+}
+
+/* Featured Section (Homepage) */
+
+.work {
+  text-align: center;
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.work h2 {
+  padding: 3rem;
+}
+
+.project-tile-block {
+  display: flex;
+  justify-content: center;
+}
+
+.project-tile h3 {
+  font-size: 1.2rem;
+  line-height: normal;
+  padding: 0.5rem 0rem 0.8rem 0rem;
+}
+
+.project-tile h3:hover {
+  text-decoration: none;
+}
+
+.project-tile {
+ margin: 1.5rem;
+ border: black solid 1px;
+ border-radius: 5px;
+ overflow: hidden;
+ transition: 1s;
+}
+
+.project-tile:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.project-tile img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+/* Footer Styling */
+
