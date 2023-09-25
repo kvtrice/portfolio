@@ -94,7 +94,7 @@ button {
   line-height: 1.6;
   letter-spacing: 0.25em;
   text-transform: uppercase;
-  padding: 0.5rem 0.75rem;
+  padding: 1rem 1.75rem;
   background: white;
   border-radius: 5px;
   border: black 1px solid;
@@ -126,7 +126,7 @@ header {
   justify-content: space-between;
   align-items: center;
   height: 10vh;
-  width: 70%;
+  width: 60%;
   margin: 0 auto;
 }
 
@@ -171,7 +171,7 @@ main .home-wrapper {
 /* Hero Section */
 
 .hero {
-  width: 70%;
+  width: 60%;
   margin: 0 auto;
   height: 75vh;
   display: flex;
@@ -188,29 +188,36 @@ main .home-wrapper {
 
 .intro h2 {
   font-size: 3.5rem;
-  margin-bottom: 0.8rem;
+  margin-bottom: 2rem;
   line-height: 1.1;
 }
 
 .intro p {
-  margin-bottom: 2rem;
-  font-size: 1.4rem;
+  margin-bottom: 4rem;
+  font-family: 'BodyGrotesqueFit', sans-serif;
+  font-size: 1.2rem;
   line-height: 1.5;
+}
+
+.callout {
+  padding: 0rem 0.5rem 0.1rem;
+  background-color: #F7FF9F;
+  border-radius: 4px;
 }
 
 /* Featured Section (Homepage) */
 
 .work {
   text-align: center;
-  width: 70%;
-  margin: 0 auto;
+  width: 60%;
+  margin: 5rem auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
 .work h2 {
-  padding: 3rem;
+  padding: 2rem;
 }
 
 .project-tile-block {
@@ -219,13 +226,10 @@ main .home-wrapper {
 }
 
 .project-tile h3 {
-  font-size: 1.2rem;
+  font-size: 1rem;
+  font-weight: ;
   line-height: normal;
   padding: 0.5rem 0rem 0.8rem 0rem;
-}
-
-.project-tile h3:hover {
-  text-decoration: none;
 }
 
 .project-tile {
@@ -248,3 +252,79 @@ main .home-wrapper {
 
 /* Footer Styling */
 
+.back-to-top {
+  text-align: center;
+  margin: 1rem;
+  transition: 500ms;
+}
+
+.back-to-top:hover {
+  transform: scale(1.5, 1.5)
+}
+
+.back-to-top img {
+  width: 2rem;
+}
+
+.footer-wrapper { /* Extend background colour past the width of the content */
+  background-color: #E9E1FD;
+  border-top: black 1px solid;
+}
+
+footer {
+  width: 60%;
+  height: 35vh;
+  margin: 0 auto;
+}
+
+footer h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* Social Connection section */
+.footer-connect h2 {
+  margin-bottom: 0.5rem;
+}
+
+.social-images img {
+  width: 4rem;
+}
+
+.footer-flex {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: left;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.footer-learn-more ul, .footer-my-work ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-learn-more, .footer-my-work {
+  margin-left: 4rem;
+}
+
+.footer-learn-more h3, .footer-my-work h3 {
+  margin-bottom: 1rem;
+}
+
+.footer-learn-more ul li, .footer-my-work ul li {
+  padding-bottom: 0.3rem;
+}
+
+footer p {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 0.75rem;
+}
