@@ -1,15 +1,17 @@
-/* 
-font-family: 'Arapey', serif;
-font-family: 'Poppins', sans-serif;
-font-family: 'BodyGrotesqueFit', sans-serif;
-font-family: 'OhnoBlazeFace', sans-serif;
-*/
 
 /* Style reset */
 * {
   margin: 0;
   box-sizing: border-box;
 }
+
+/* -- Font Family CSS to pull from -- */
+/* 
+font-family: 'Arapey', serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'BodyGrotesqueFit', sans-serif;
+font-family: 'OhnoBlazeFace', sans-serif;
+*/
 
 /* Add external fonts */
 @font-face {
@@ -28,7 +30,7 @@ font-family: 'OhnoBlazeFace', sans-serif;
     url(fonts/OhnoBlazeface36.ttf) format('truetype');
 }
 
-/* Global Styles */
+/* -- Start Global Styles -- */
 
 /* Fonts */
 
@@ -166,7 +168,11 @@ main {
   margin: 0 auto;
 }
 
-/* Home Page Backgrounds */
+/* -- End Global Styles -- */
+
+/* -- Start Index Page Styles -- */
+
+/* Home Backgrounds */
 
 .home-wrapper {
   background: #E9E1FD;
@@ -211,6 +217,7 @@ main .home-wrapper {
   color:#E9E1FD;
   padding: 0rem 0.7rem 0.2rem;
   font-family: 'Arapey', serif;
+  font-style: italic;
   font-size: 1.5rem;
   border-radius: 0 20px 20px 20px;
   animation: highlight 3s forwards;
@@ -247,6 +254,7 @@ main .home-wrapper {
 
 .work h2 {
   padding: 2rem;
+  font-size: 2.5rem;
 }
 
 .project-tile-block {
@@ -357,9 +365,11 @@ footer p {
   font-size: 0.75rem;
 }
 
-/* About Page Styling */
-/* Main text section with image */
+/* -- End Index Page Styling */
 
+/* -- Start About Page Styling -- */
+
+/* Main text section with image */
 .about {
   width: 60%;
   margin: 2rem auto;
@@ -395,7 +405,7 @@ footer p {
   align-self: center;
 }
 
-/* Skills section on about page */
+/* Skills section */
 
 .skills-wrapper {
   background-color:#e9e1fd25;
@@ -441,7 +451,7 @@ footer p {
   width: 5rem;
 }
 
-/* Interests Section on About Page */
+/* Interests Section */
 
 .interests {
   padding-top: 4rem;
@@ -492,3 +502,40 @@ footer p {
   }
 }
 
+/* -- End About Page Styling */
+
+/* -- Start Project Pages Styling -- */
+
+/* Global Project Styles */
+
+
+
+/* Talk to Maple Project Styling */
+
+.talktomaple-hero {
+  height: 60vh;
+  background-image: url(/images/projects/talktomaple/00_talktomaple_splash.png);
+  background-color: #EFD4FF;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.talktomaple-header-wrapper {
+  background-color: #EFD4FF;
+}
+
+
+/* At Once Project Stlying */
+.atonce-hero {
+  height: 60vh;
+  background-image: url(/images/projects/atonce/00_atonce_splash.png);
+  background-color: #FFD28F;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.atonce-header-wrapper {
+  background-color: #FFD28F;
+}
