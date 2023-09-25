@@ -46,7 +46,7 @@ p {
   letter-spacing: 0.02em;
 }
 
-h1, .heading {
+h1, .heading, .project-heading h2 {
   font-family: 'OhnoBlazeFace', sans-serif;
   font-size: 2.25rem;
 }
@@ -73,7 +73,7 @@ figcaption {
   font-size: 0.8rem;
 }
 
-.sub-heading {
+.sub-heading, .summary-block h3 {
   font-family: 'BodyGrotesqueFit', sans-serif;
   font-size: 0.75rem;
   line-height: 1.6;
@@ -505,20 +505,71 @@ footer p {
 /* -- End About Page Styling */
 
 /* -- Start Project Pages Styling -- */
+/* -- Start Global Project Styles -- */
+/* Project Hero and Summary */
 
-/* Global Project Styles */
+.no-bg {
+  width: 60%;
+  margin: 0 auto;
+  padding: 4rem;
+}
 
-
-
-/* Talk to Maple Project Styling */
-
-.talktomaple-hero {
+.project-hero {
   height: 60vh;
-  background-image: url(/images/projects/talktomaple/00_talktomaple_splash.png);
-  background-color: #EFD4FF;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+.project-heading {
+  margin-bottom: 2rem;
+}
+
+.project-summary {
+  display: flex;
+  justify-content: space-evenly;
+  border: black solid 1px;
+  border-radius: 8px;
+  text-align: left;
+  padding: 0.5rem;
+  margin-bottom: 3rem;
+}
+
+.project-summary .summary-block {
+  margin: 1rem;
+  width: calc(100% / 4);
+}
+
+.project-summary h3 {
+  font-weight: bold;
+  color: white;
+  background-color: black;
+  border-radius: 5px;
+  padding: 0.2rem 0.4rem;
+  margin-bottom: 1rem;
+}
+
+/* Project Body */
+
+.sub-heading {
+  padding: 1rem 0rem;
+}
+
+
+
+
+/* View More */
+
+
+
+/* -- End Global Project Styles -- */
+
+/* -- Start Individual Project Styles -- */
+/* Talk to Maple Project Styling */
+
+.talktomaple {
+  background-image: url(/images/projects/talktomaple/00_talktomaple_splash.png);
+  background-color: #EFD4FF;
 }
 
 .talktomaple-header-wrapper {
@@ -527,13 +578,9 @@ footer p {
 
 
 /* At Once Project Stlying */
-.atonce-hero {
-  height: 60vh;
+.atonce {
   background-image: url(/images/projects/atonce/00_atonce_splash.png);
   background-color: #FFD28F;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: contain;
 }
 
 .atonce-header-wrapper {
