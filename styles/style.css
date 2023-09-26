@@ -32,6 +32,13 @@ font-family: 'OhnoBlazeFace', sans-serif;
 
 /* -- Start Global Styles -- */
 
+/* Widths */
+
+header, footer, .hero, .work, .about, .skills, .interests {
+  width: 80%;
+  max-width: 1200px;
+}
+
 /* Fonts */
 
 html {
@@ -136,8 +143,8 @@ header {
   justify-content: space-between;
   align-items: center;
   height: 10vh;
-  width: 60%;
   margin: 0 auto;
+  padding: 3rem 0;
 }
 
 header div {
@@ -146,11 +153,11 @@ header div {
 
 header div h1, header div h2 {
   font-size: 1.5rem;
-  padding: 0.5rem
+  padding: 0.5rem;
 }
 
 nav {
-  padding: 0.5rem
+  padding: 0.5rem;
 }
 
 nav li {
@@ -185,7 +192,6 @@ main .home-wrapper {
 /* Hero Section */
 
 .hero {
-  width: 60%;
   margin: 0 auto;
   height: 75vh;
   display: flex;
@@ -241,11 +247,10 @@ main .home-wrapper {
   }
 }
 
-/* Featured Section (Homepage) */
+/* Featured / Work Section and Tiles */
 
 .work {
   text-align: center;
-  width: 60%;
   margin: 5rem auto;
   display: flex;
   flex-direction: column;
@@ -262,13 +267,13 @@ main .home-wrapper {
   justify-content: center;
 }
 
-.project-tile h3 {
+.project-tile h3, .view-more-tile h3 {
   font-size: 1rem;
   line-height: normal;
   padding: 0.5rem 0rem 0.8rem 0rem;
 }
 
-.project-tile {
+.project-tile, .view-more-tile {
  margin: 1.5rem;
  border: black solid 1px;
  border-radius: 5px;
@@ -276,11 +281,11 @@ main .home-wrapper {
  transition: 1s;
 }
 
-.project-tile:hover {
+.project-tile:hover, .view-more-tile:hover {
   transform: scale(1.1, 1.1);
 }
 
-.project-tile img {
+.project-tile img, .view-more-tile img {
   height: 100%;
   width: 100%;
   object-fit: contain;
@@ -308,8 +313,7 @@ main .home-wrapper {
 }
 
 footer {
-  width: 60%;
-  height: 35vh;
+  height: fit-content;
   margin: 0 auto;
 }
 
@@ -338,7 +342,6 @@ footer h3 {
   flex-wrap: wrap;
   text-align: left;
   justify-content: space-between;
-  padding: 1rem;
 }
 
 .footer-learn-more ul, .footer-my-work ul {
@@ -352,7 +355,7 @@ footer h3 {
 }
 
 .footer-learn-more h3, .footer-my-work h3 {
-  margin-bottom: 1rem;
+  padding-bottom: 1rem;
 }
 
 .footer-learn-more ul li, .footer-my-work ul li {
@@ -361,7 +364,7 @@ footer h3 {
 
 footer p {
   margin-top: 1rem;
-  margin-bottom: 1rem;
+  padding-bottom: 2rem;
   font-size: 0.75rem;
 }
 
@@ -371,7 +374,6 @@ footer p {
 
 /* Main text section with image */
 .about {
-  width: 60%;
   margin: 2rem auto;
 }
 
@@ -395,7 +397,7 @@ footer p {
 }
 
 .image-button-block img {
-  width: 20vw;
+  width: 25vw;
   border-radius: 50%;
   border: black solid 1px;
 }
@@ -412,7 +414,6 @@ footer p {
 }
 
 .skills {
-  width: 60%;
   padding: 4rem 0;
   margin: 2rem auto;
 }
@@ -456,7 +457,6 @@ footer p {
 .interests {
   padding-top: 4rem;
   padding-bottom: 6rem;
-  width: 60%;
   margin: 0 auto;
 }
 
@@ -509,9 +509,17 @@ footer p {
 /* Project Hero and Summary */
 
 .no-bg, .bg {
-  width: 60%;
+  width: 80%;
+  max-width: 800px;
   margin: 0 auto;
-  padding: 4rem;
+}
+
+.project-heading {
+  padding: 3rem 0rem;
+}
+
+.dive-in-link {
+  padding: 1rem 0 4rem;
 }
 
 .project-hero {
@@ -521,8 +529,8 @@ footer p {
   background-size: contain;
 }
 
-.project-heading {
-  margin-bottom: 2rem;
+.project-section {
+  padding: 3rem 0rem 4rem;
 }
 
 .project-summary {
@@ -556,10 +564,18 @@ footer p {
 }
 
 .project-section div p, .project-text-block p {
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
 }
 
 .project-section div h3, .project-text-block h3 {
+  padding-bottom: 1.5rem;
+}
+
+.project-text-block ul, .project-text-block ol {
+  padding: 0.5rem auto;
+}
+
+.project-text-block {
   padding-bottom: 1.5rem;
 }
 
@@ -585,9 +601,9 @@ footer p {
 
 .project-screen-capture {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   flex-wrap: wrap;
-  padding-bottom: 5rem;
+  padding: 2rem 0;
 }
 
 .screen-capture-block {
@@ -595,18 +611,35 @@ footer p {
   flex-direction: column;
   align-items: center;
   height: 70vh;
-  padding: 1rem;
+  width: 18rem;
+  margin-bottom: 5rem;
 }
 
 .screen-capture-block p {
+  text-align: center;
   font-weight: bold;
   font-size: 0.8rem;
-  padding: 1rem;
+  line-height: 1.4;
+  padding: 1rem 1rem 1rem;
+}
+
+.final-section {
+  border-bottom: black solid 1px;
 }
 
 /* View More */
 
+.view-more {
+  padding: 4rem 0;
+}
 
+.view-more-heading h2 {
+  text-align: center;
+  padding-bottom: 1.5rem;
+}
+.view-more-tile h3 {
+  padding: 0.5rem 0rem 0.8rem 1rem;
+}
 
 /* -- End Global Project Styles -- */
 
@@ -624,6 +657,10 @@ footer p {
 
 .talktomaple-bg-wrapper {
   background-color: #efd4ff38;
+}
+
+.team-photo img {
+  border-radius: 8px;
 }
 
 /* At Once Project Stlying */
