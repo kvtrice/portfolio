@@ -38,12 +38,12 @@ html {
   font-size: 16px;
 }
 
-p {
+p, .project-text-block ul li, .project-text-block ol li {
   font-family: 'Poppins', sans-serif;
   font-weight: 300;
   font-size: 1rem;
   line-height: 1.9;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.015em;
 }
 
 h1, .heading, .project-heading h2 {
@@ -508,7 +508,7 @@ footer p {
 /* -- Start Global Project Styles -- */
 /* Project Hero and Summary */
 
-.no-bg {
+.no-bg, .bg {
   width: 60%;
   margin: 0 auto;
   padding: 4rem;
@@ -552,11 +552,57 @@ footer p {
 /* Project Body */
 
 .sub-heading {
-  padding: 1rem 0rem;
+  padding: 1.5rem 0rem;
 }
 
+.project-section div p, .project-text-block p {
+  padding-bottom: 2rem;
+}
 
+.project-section div h3, .project-text-block h3 {
+  padding-bottom: 1.5rem;
+}
 
+.project-image-block {
+  margin: 1rem 0rem 4rem;
+  padding: 1rem;
+  border-radius: 8px;
+  background: white;
+}
+
+.project-image-block img, .screen-capture-block img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.project-image-block figcaption {
+  text-align: right;
+  color: gray;
+  font-size: 0.7rem;
+  padding: 1rem 2rem 1rem 1rem;
+}
+
+.project-screen-capture {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding-bottom: 5rem;
+}
+
+.screen-capture-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 70vh;
+  padding: 1rem;
+}
+
+.screen-capture-block p {
+  font-weight: bold;
+  font-size: 0.8rem;
+  padding: 1rem;
+}
 
 /* View More */
 
@@ -576,6 +622,9 @@ footer p {
   background-color: #EFD4FF;
 }
 
+.talktomaple-bg-wrapper {
+  background-color: #efd4ff38;
+}
 
 /* At Once Project Stlying */
 .atonce {
