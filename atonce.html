@@ -20,7 +20,7 @@
   <body>
     <!-- Header -->
     <div class="atonce-header-wrapper">
-      <header class="atonce-page">
+      <header class="atonce-page" id="top">
         <div>
           <a href="index.html">
             <img class="logo" src="images/logo/flowerlogo_outline.png" />
@@ -47,6 +47,25 @@
 
     <!-- Main Content -->
     <main>
+      <!-- Fast Scroll Buttons -->
+      <div class="top-bottom-arrows">
+        <div class="top">
+          <a href="#top">
+            <img
+              src="/images/icons/social_icons/handdrawn/top.png"
+              alt="Arrow to top of screen"
+            />
+          </a>
+        </div>
+        <div class="bottom">
+          <a href="#bottom">
+            <img
+              src="images/icons/social_icons/handdrawn/bottom.png"
+              alt="Arrow to bottom of screen"
+            />
+          </a>
+        </div>
+      </div>
       <!-- Project Overview Section -->
       <section>
         <div class="atonce project-hero">
@@ -263,13 +282,13 @@
           <p>
             During our competitor research, we realised that the listing
             creation experience varied greatly depending on the category of the
-            service you’re that you’re creating a listing for.<br /><br>
+            service you’re that you’re creating a listing for.<br /><br />
 
             Given our short project timeline it was going to be unrealistic for
             us to effectively address the listing needs for all of the service
             provider types that will be using the AtOnce platform. The decision
             was made to hone in on a single service provider type; accommodation
-            providers.<br /><br>
+            providers.<br /><br />
           </p>
           <h3>Why accommodation providers?</h3>
           <p>
@@ -279,7 +298,7 @@
             countries. We also hypothesised that due to the high value nature of
             the transaction (e.g. rent), there would be larger opportunity to
             capture revenue share from service providers (e.g. commission).
-            <br /><br>
+            <br /><br />
 
             Given these factors, we felt this was the highest value item for
             both the client and the users of the platform. With more time, we
@@ -335,10 +354,11 @@
             <p>
               With insights from our user interviews, heuristics analysis and
               journey mapping we had a thorough understanding of the pain points
-              our users were facing - now we had to think about how to solve them!
-              In order to do this we held a brainstorming session as a team,
-              putting together multiple ‘how might we’ statements to re-frame the
-              problems we’re aiming to solve and encourage creativity.
+              our users were facing - now we had to think about how to solve
+              them! In order to do this we held a brainstorming session as a
+              team, putting together multiple ‘how might we’ statements to
+              re-frame the problems we’re aiming to solve and encourage
+              creativity.
             </p>
           </div>
           <div class="project-image-block side-by-side-images">
@@ -356,8 +376,8 @@
           </div>
           <div class="project-text-block">
             <p>
-              Following the session, we plotted our solution ideas on an Impact x
-              Effort matrix to help structure our prioritisation. We were
+              Following the session, we plotted our solution ideas on an Impact
+              x Effort matrix to help structure our prioritisation. We were
               conscious of the short timeline we had and so focussed on the Low
               effort, High impact quick wins that we identified.
             </p>
@@ -385,7 +405,8 @@
               <li>Testimonials & ratings</li>
               <li>Pre-defined options to select from + Industry specific</li>
               <li>Ability to upload a hero listing image + listing preview</li>
-            </ul><br>
+            </ul>
+            <br />
           </div>
           <!-- Information Architecture -->
           <div class="project-text-block">
@@ -397,7 +418,7 @@
               our designs align with our users’ mental models. This was
               particularly important as we began thinking about the ordering,
               groupings and hierarchy of the content in the listing upload
-              flow.<br /><br>
+              flow.<br /><br />
               After comparing similarities across participant results alongside
               prior research findings, we arrived at the following information
               architecture for our ad upload screens:
@@ -425,7 +446,7 @@
           <p>
             Before jumping into design we mapped out the user flow of our users
             from the point they enter the platform to when their ad is
-            successfully uploaded.<br /><br>
+            successfully uploaded.<br /><br />
 
             With our proposed direction involving multiple screens, it was
             important that a user could go back to previous steps and even pause
@@ -501,7 +522,8 @@
             We conducted usability testing sessions with accommodation providers
             to validate whether the new designs would solve the challenges they
             face. We put together a scenario asking the user to create a new
-            listing and observed how they interacted with the prototype. <br /><br>
+            listing and observed how they interacted with the prototype.
+            <br /><br />
 
             The feedback from the session was very positive, revealing that
             uploading a listing was much more straightforward and simple to do.
@@ -532,9 +554,9 @@
             <br />
             <div class="quote">
               <p class="quote-body">
-                “When I looked at the screen by screen flow, it really clicked for
-                me. It looks very nice, it's very easy to use, I can understand why
-                we would want to implement something like this”
+                “When I looked at the screen by screen flow, it really clicked
+                for me. It looks very nice, it's very easy to use, I can
+                understand why we would want to implement something like this”
               </p>
               <p class="quote-reference">- Tim from AtOnce</p>
             </div>
@@ -558,16 +580,17 @@
               <li>Ad metrics for service providers to track ROI</li>
               <li>Implement solution for additional service provider types</li>
               <li>Revamp the marketplace view for buyers</li>
-            </ul><br>
+            </ul>
+            <br />
           </div>
           <!-- Key Takeaway -->
           <div class="project-text-block">
             <h3>A key takeaway</h3>
             <p>
-              When comparing the information architecture of the existing platform
-              to the solution we designed, it’s clear that the card sorting
-              activity added a lot of value. Now we had information laid out in a
-              way that users really understood and enjoyed based on the
+              When comparing the information architecture of the existing
+              platform to the solution we designed, it’s clear that the card
+              sorting activity added a lot of value. Now we had information laid
+              out in a way that users really understood and enjoyed based on the
               feedback.<br />
               The value of well research and thought out IA really can't be
               understated 👏
@@ -594,14 +617,7 @@
 
     <!-- Footer -->
     <div class="footer-wrapper">
-      <footer>
-        <div title="Back to top" class="back-to-top">
-          <a href="#top"
-            ><img
-              src="images/icons/social_icons/handdrawn/top.png"
-              alt="Back to Top"
-          /></a>
-        </div>
+      <footer id="bottom">
         <div class="footer-flex">
           <div class="footer-connect">
             <h2 class="heading">Let's connect</h2>
