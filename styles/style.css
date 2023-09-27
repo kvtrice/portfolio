@@ -863,9 +863,19 @@ footer p {
 /* Small screens and tablets */
 @media screen and (max-width: 850px) {
 
-  /* Blog Tiles */
+  /* Global Styles */
+  .heading .section-header {
+    padding: 2rem 0 1rem;
+    font-size: 1.8rem;
+  }
+
+  /* Blogs */
   .blog-tile {
     width: 100%;
+  }
+
+  .article-wrapper {
+    padding-top: 5rem;
   }
 
   /* Projects */
@@ -947,6 +957,10 @@ footer p {
     max-width: 50vw;
   }
 
+  .featured .heading h2 {
+    padding: 0 0 1rem;
+  }
+
   /* Footer */
 
   .footer-flex, .footer-nav-links {
@@ -1004,6 +1018,15 @@ footer p {
 
   header, footer, .hero, .work, .about, .skills, .interests, .blog, .read-more {
     width: 90%;
+  }
+
+  .heading .section-header {
+    font-size: 1.5rem;
+  }
+
+  .top-bottom-arrows {
+    right: 0.2rem;
+    bottom: 3rem;
   }
 
   /* Header */
