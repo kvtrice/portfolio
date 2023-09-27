@@ -755,7 +755,7 @@ footer p {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 25%;
+  width: 30%;
   margin: 1rem;
   border: black solid 1px;
   border-radius: 5px;
@@ -828,6 +828,10 @@ footer p {
 .read-more {
   margin: 0 auto;
   padding: 2.5rem 0;
+}
+
+.read-more .heading h2 {
+  font-size: 2rem;
 }
 
 /* -- End Blog Styling -- */
