@@ -34,7 +34,7 @@ font-family: 'OhnoBlazeFace', sans-serif;
 
 /* Widths */
 
-header, footer, .hero, .work, .about, .skills, .interests {
+header, footer, .hero, .work, .about, .skills, .interests, .blog {
   width: 80%;
   max-width: 1200px;
 }
@@ -696,3 +696,72 @@ footer p {
   padding-top: 1rem;
   text-align: center;
 }
+
+/* -- End Project Styles -- */
+
+/* -- Start Blog Styles -- */
+/* Global Blog Tile Styling */
+
+.blog {
+  margin: 5rem auto;
+}
+
+.blog h2 {
+  padding: 2rem;
+  font-size: 2.5rem;
+}
+
+.blog-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.blog-tile {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 25%;
+  margin: 1rem;
+  border: black solid 1px;
+  border-radius: 5px;
+  overflow: hidden;
+  transition: 1s;
+ }
+
+ .blog-tile-text {
+  padding: 1rem;
+ }
+
+ .blog-tile-text h3 {
+  font-size: 1.2rem;
+ }
+
+ .blog-tile-text .sub-heading {
+  font-size: 0.7rem;
+  padding-top: 0.5rem;
+ }
+ 
+.blog-tile-text p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+ .blog-tile:hover {
+   transform: scale(1.1, 1.1);
+ }
+
+.blog-tile-image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.blog-arrow {
+  text-align: right;
+  padding: 0 1rem 1rem;
+}
+
+/* Global Blog Page Styling */
+
+/* -- End Blog Styling -- */
