@@ -586,7 +586,7 @@ footer p {
   background: white;
 }
 
-.project-image-block img, .screen-capture-block img {
+.project-image-block img, .screen-capture-block img, .atonce-screen-capture img {
   height: 100%;
   width: 100%;
   object-fit: contain;
@@ -671,4 +671,28 @@ footer p {
 
 .atonce-header-wrapper {
   background-color: #FFD28F;
+}
+
+.atonce-bg-wrapper {
+  background-color: #ffd28f2c;
+}
+
+.quote {
+  padding: 1rem;
+}
+
+.quote-body {
+  text-align: center;
+  font-style: italic;
+  font-weight: 500;
+}
+
+.quote-reference {
+  text-align: right;
+  font-weight: 500;
+}
+
+.before-after h3 {
+  padding-top: 1rem;
+  text-align: center;
 }
