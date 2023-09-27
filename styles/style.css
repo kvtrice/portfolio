@@ -34,7 +34,7 @@ font-family: 'OhnoBlazeFace', sans-serif;
 
 /* Widths */
 
-header, footer, .hero, .work, .about, .skills, .interests, .blog {
+header, footer, .hero, .work, .about, .skills, .interests, .blog, .read-more {
   width: 80%;
   max-width: 1200px;
 }
@@ -265,6 +265,10 @@ main .home-wrapper {
 .project-tile-block {
   display: flex;
   justify-content: center;
+}
+
+.project-tile-block a:hover {
+  text-decoration: none;
 }
 
 .project-tile h3, .view-more-tile h3 {
@@ -706,6 +710,10 @@ footer p {
   margin: 5rem auto;
 }
 
+.blog-tile a:hover {
+  text-decoration: none;
+}
+
 .blog h2 {
   padding: 2rem;
   font-size: 2.5rem;
@@ -743,7 +751,7 @@ footer p {
  }
  
 .blog-tile-text p {
-  font-size: 1rem;
+  font-size: 0.9rem;
   line-height: 1.5;
 }
 
@@ -763,5 +771,37 @@ footer p {
 }
 
 /* Global Blog Page Styling */
+
+.article {
+  width: 80%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.article {
+  display: flex;
+  flex-direction: column;
+}
+
+.article-image img{
+  width: 100%;
+  max-width: 800px;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.article-heading {
+  padding-top: 2rem;
+}
+
+.article-content {
+  padding-bottom: 3rem;
+}
+
+.read-more {
+  margin: 0 auto;
+  padding: 2.5rem 0;
+}
 
 /* -- End Blog Styling -- */
