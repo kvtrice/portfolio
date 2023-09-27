@@ -177,6 +177,7 @@ button a:hover {
 /* Header Nav Bar Styling */
 
 header {
+  position: sticky;
   list-style: none;
   display: flex;
   justify-content: space-between;
@@ -196,11 +197,17 @@ header div h1, header div h2 {
 }
 
 nav {
+  display: flex;
   padding: 0.5rem;
 }
 
-nav li {
-  display: flex
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  padding-left: 1.5rem;
 }
 
 .logo {
@@ -239,7 +246,8 @@ main .home-wrapper {
 }
 
 .hero-image {
-  width: 30vw;
+  max-height: 75vh;
+  max-width: 30vw;
   border-bottom: 2px solid white;
   border-radius: 50%;
   margin: 3rem;
@@ -313,11 +321,14 @@ main .home-wrapper {
 .project-tile h3, .view-more-tile h3 {
   font-size: 1rem;
   line-height: normal;
-  padding: 0.5rem 0rem 0.8rem 0rem;
+  padding: 1rem;
 }
 
 .project-tile, .view-more-tile {
- margin: 1.5rem;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ margin: 1rem;
  border: black solid 1px;
  border-radius: 5px;
  overflow: hidden;
@@ -325,13 +336,13 @@ main .home-wrapper {
 }
 
 .project-tile:hover, .view-more-tile:hover {
-  transform: scale(1.1, 1.1);
+  transform: scale(1.1);
 }
 
 .project-tile img, .view-more-tile img {
   height: 100%;
   width: 100%;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 /* Footer Styling */
@@ -835,3 +846,119 @@ footer p {
 }
 
 /* -- End Blog Styling -- */
+
+
+/* -- Start Media Queries -- */
+
+/* Smaller desktops */
+@media screen and (max-width: 1200px) {
+
+  /* Blog Tiles */
+  .blog-tile {
+    width: calc((100% - 4rem) / 2);
+  }
+}
+
+/* Small screens and tablets */
+@media screen and (max-width: 850px) {
+
+  /* Blog Tiles */
+  .blog-tile {
+    width: 100%;
+  }
+
+  /* Project Tiles */
+  .project-tile-block {
+    flex-direction: column;
+  }
+
+  /* About Text */
+  .flex-wrapper {
+    flex-direction: column;
+  }
+
+  .about .section-header h2 {
+    text-align: center;
+  }
+
+  .image-button-block {
+    margin-left: 0;
+    align-items: center;
+    order: -1;
+    margin-bottom: 3rem;
+  }
+
+  .image-button-block img {
+    width: 45vw;
+  }
+
+  .image-button-block button {
+    margin-top: 1rem;
+    padding: 0.8rem 1.3rem;
+  }
+
+  .about-text {
+    text-align: center;
+  }
+
+  /* Index Hero */
+  .hero {
+    height: 90vh;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .intro {
+    text-align: center;
+  }
+
+  .intro h1 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 3rem;
+  }
+
+  .intro p {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+  }
+
+  .intro button {
+    padding: 0.8rem 1.3rem;
+  }
+
+  .hero-image {
+    max-height: 75vh;
+    max-width: 50vw;
+  }
+
+  /* Footer */
+
+  .footer-flex, .footer-nav-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-nav-links {
+    text-align: center;
+  }
+
+  .footer-learn-more, .footer-my-work {
+    margin-left: 0;
+  }
+
+  .footer-connect {
+    text-align: center;
+  }
+
+  .copyright {
+    text-align: center;
+    padding-top: 1.5rem;
+  }
+
+}
+
+/* Mobile Devices */
+@media screen and (max-width: 480px) {
+  
+}
