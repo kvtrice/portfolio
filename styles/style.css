@@ -606,7 +606,7 @@ footer p {
 }
 
 .project-section div p, .project-text-block p {
-  padding-bottom: 1rem;
+  padding: 1rem 1rem 1rem;
 }
 
 .project-section div h3, .project-text-block h3 {
@@ -632,6 +632,7 @@ footer p {
   height: 100%;
   width: 100%;
   object-fit: contain;
+  background-color: transparent;
 }
 
 .project-image-block figcaption {
@@ -645,16 +646,15 @@ footer p {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  padding: 2rem 0;
+  padding-top: 2rem
 }
 
 .screen-capture-block {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  height: 70vh;
-  width: 18rem;
-  margin-bottom: 5rem;
+  height: auto;
+  width: calc(90% / 2);
+  margin: 0 0.5rem 2rem;
 }
 
 .screen-capture-block p {
@@ -662,7 +662,6 @@ footer p {
   font-weight: bold;
   font-size: 0.8rem;
   line-height: 1.4;
-  padding: 1rem 1rem 1rem;
 }
 
 .final-section {
@@ -1055,6 +1054,12 @@ footer p {
 
   .interests-block p {
     text-align: center;
+  }
+
+  /* Projects */
+
+  .screen-capture-block {
+    width: 90%;
   }
 
 }
