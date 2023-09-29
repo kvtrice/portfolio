@@ -40,17 +40,19 @@ Given my main target audience of recruiters and employers, I wanted to put my fe
 
 This led me to the decision to begin with a desktop-first approach, and enabled the usage of extra's such as hover states and transitions. In industry often the mobile-first approach is taken, however given the goal and target audience I felt desktop-first was in fact the best choice for this project.
 
+**Design**
+
 My website is responsive across all platforms including tablet and mobile devices and contains a total of 11 HTML pages comprised of 4 main pages, 5 blog article pages and 2 (real) project pages. Every page has a header inclusive of site navigation links as well as a footer that contains links to contact me via email and view my professional socials such as LinkedIn and GitHub along with additional site navigation links. 
 
-**Scrolling**
-
-As I've previously worked in the UX industry, I have some real case studies I've completed that I wanted to include as part of this project. Each of these case studies turned out to be quite lengthy and I noticed as a user that it was challenging to scroll to the bottom (or back to the top) of the page to navigate elsewhere if needed. 
-
-This prompted me to include an additional component that allows the users to quickly scroll back to the top or the bottom of the page they're currently on - and is sticky to the right of the page at all times so it's easily accessible. This was so useful on the project pages that I decided to include it on all pages across my site to ensure continuity.
+I've opted for a minimal design, aiming for simplicity and white space to draw user attention to important components. I have a cohesive colour pallete that's used across the site, as well as each case study / project having it's own colour scheme based on the brand colours of that company; further helping the user make distinctions about where they are on my website.
 
 **User Experience**
 
-I've taken advantage of the desktop-first approach I took and included a range of hover animations and transitions to help signal interactivity to my users. All navigation links underline when hovered over, primary buttons pop out (via using a transition that translates the buttons position and adds a box-shadow) and tiles showcasing some of my skills and interests scale when hovered on and have a colorful rainbow effect to inject some fun and personality into the experience.
+From my previous work experience I have some real case studies I've completed that I wanted to showcase on my portfolio site. Each of these case studies turned out to be quite lengthy and I noticed as a user that it was challenging to scroll to the bottom (or back to the top) of the page to navigate elsewhere if needed. 
+
+This prompted me to include an additional component that allows the users to quickly scroll back to the top or the bottom of the page they're currently on - and is sticky to the right of the page at all times so it's easily accessible. This was so useful on the project pages that I decided to include it on all pages across my site to ensure continuity.
+
+I've also taken advantage of the desktop-first approach I took and included a range of hover animations and transitions to help signal interactivity to my users. All navigation links underline when hovered over, primary buttons pop out (via using a transition that translates the buttons position and adds a box-shadow) and tiles showcasing some of my skills and interests scale when hovered on and have a colorful rainbow effect to inject some fun and personality into the experience.
 
 I've also decided to wrap the entirety of certain components in anchor links to ensure that no matter where the user clicks, they will be able to go to where they're hoping to go. This is particularly true of the project or blog post tiles, as in some of my early testing I faced challenges when trying to click on the image vs. clicking the text of the tile, so by instead wrapping the entire div in the anchor link the user can click anywhere they'd like (which is also signalled via the cursor change and scaling on hover effects).
 
