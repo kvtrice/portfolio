@@ -96,6 +96,7 @@ I've also decided to wrap the entirety of certain components in anchor links to 
 ![Desktop Home Page](/docs/desktop/desktop-screenshots/desktop-full-project.png)
 
 **Tablet & Mobile**
+
 ![Tablet Mobile Home Page](/docs/tablet-mobile/tablet-mobile-project.png)
 
 
