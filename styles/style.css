@@ -343,7 +343,7 @@ main .home-wrapper {
  border: black solid 1px;
  border-radius: 5px;
  overflow: hidden;
- transition: 1s;
+ transition: 400ms;
 }
 
 .project-type-tag {
@@ -387,9 +387,17 @@ main .home-wrapper {
   margin: 0 0.5rem 0.5rem 0;
 }
 
+.tag-section li ul:hover {
+  animation: colourful-tile 3s alternate infinite;
+}
+
 .technologies li ul{
   background-color: black;
   color: white;
+}
+
+.technologies li ul:hover {
+  color: black;
 }
 
 /* Footer Styling */
