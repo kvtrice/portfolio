@@ -726,14 +726,23 @@ footer p {
 
 .view-more {
   padding: 4rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .view-more-heading h2 {
+  font-size: 1.8rem;
   text-align: center;
   padding-bottom: 1.5rem;
 }
-.view-more-tile h3 {
-  padding: 0.5rem 0rem 0.8rem 1rem;
+
+.view-more .project-tile {
+  width: 20vw;
+}
+
+.view-more .project-tile a:hover {
+  text-decoration: none;
 }
 
 /* -- End Global Project Styles -- */
@@ -793,113 +802,6 @@ footer p {
 }
 
 /* -- End Project Styles -- */
-
-/* -- Start Blog Styles -- */
-/* Global Blog Tile Styling */
-
-.blog {
-  margin: 3rem auto;
-}
-
-.blog-tile a:hover {
-  text-decoration: none;
-}
-
-.blog h2 {
-  padding: 2rem;
-  font-size: 2.5rem;
-}
-
-.blog-section {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.blog-tile {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 30%;
-  margin: 1rem;
-  border: black solid 1px;
-  border-radius: 5px;
-  overflow: hidden;
-  transition: 1s;
- }
-
- .blog-tile-text {
-  padding: 1rem;
- }
-
- .blog-tile-text h3 {
-  font-size: 1.2rem;
- }
-
- .blog-tile-text .sub-heading {
-  font-size: 0.7rem;
-  padding-top: 0.5rem;
- }
- 
-.blog-tile-text p {
-  font-size: 0.9rem;
-  line-height: 1.5;
-}
-
- .blog-tile:hover {
-   transform: scale(1.1, 1.1);
- }
-
-.blog-tile-image img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-}
-
-.blog-arrow {
-  text-align: right;
-  padding: 0 1rem 1rem;
-}
-
-/* Global Blog Page Styling */
-
-.article {
-  width: 80%;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.article {
-  display: flex;
-  flex-direction: column;
-}
-
-.article-image img{
-  width: 100%;
-  max-width: 800px;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 8px;
-}
-
-.article-heading {
-  padding-top: 2rem;
-}
-
-.article-content {
-  padding-bottom: 3rem;
-}
-
-.read-more {
-  margin: 0 auto;
-  padding: 2.5rem 0;
-}
-
-.read-more .heading h2 {
-  font-size: 2rem;
-}
-
-/* -- End Blog Styling -- */
 
 
 /* -- Start Media Queries -- */
