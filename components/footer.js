@@ -12,7 +12,8 @@ class Footer extends HTMLElement {
                 }
                 
                 footer {
-                    padding-top: 2rem;
+                    padding-top: 2.5rem;
+                    padding-bottom: 1rem;
                     height: fit-content;
                     margin: 0 auto;
                 }

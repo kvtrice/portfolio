@@ -24,6 +24,18 @@ class Header extends HTMLElement {
                     width: 3rem;
                     padding: 0.5rem
                 }
+
+                .dropdown-menu {
+                    display: none;
+                    position: absolute;
+                    background-color: #fff;
+                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                }
+
+                .dropdown:hover .dropdown-menu {
+                    display: block;
+                }
+
             </style>
 
             <header id="top">
@@ -40,8 +52,12 @@ class Header extends HTMLElement {
                 <li>
                 <a href="about.html">About</a>
                 </li>
-                <li>
-                <a href="work.html">Work</a>
+                <li class="drop-down">
+                    <a href="work.html">Work</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Talk to Maple</a></li>
+                        <li><a href="#">At Once</a></li>
+                    </ul>
                 </li>
             </ul>
             </nav>

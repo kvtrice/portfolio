@@ -13,6 +13,7 @@
     <script src="components/header.js" type="text/javascript" defer></script>
     <script src="components/footer.js" type="text/javascript" defer></script>
     <script src="components/scroll.js" type="text/javascript" defer></script>
+    <script src="components/featured.js" type="text/javascript" defer></script>
     <link rel="stylesheet" href="styles/reset.css" />
     <link rel="stylesheet" href="styles/style.css" />
     <title>Talk to Maple</title>
@@ -29,7 +30,7 @@
     <main>
       <!-- Quick Scroll Component -->
       <scroll-component></scroll-component>
-      
+
       <!-- Project Overview Section -->
       <section class="talktomaple project-hero">
         <!-- Section for background image -->
@@ -920,56 +921,7 @@
         <div class="view-more-heading">
           <h2>View more</h2>
         </div>
-        <!-- View More Block -->
-        <div>
-          <!-- View More Project Tile -->
-          <div class="project-tile">
-            <a href="atonce.html">
-              <div class="link-wrapper">
-                <p class="project-type-tag sub-heading">Case Study</p>
-                <img
-                  class="project-tile-image"
-                  src="images/projects/atonce/0_atonce_hero.jpg"
-                  alt="Project: At Once"
-                />
-                <h3 class="project-tile-heading">At Once</h3>
-                <p>Re-designing At Once's marketplace listing upload feature</p>
-                <!-- Tile Tag Block -->
-                <div class="tag-block">
-                  <!-- Tag Section -->
-                  <div class="tag-section summary">
-                    <li>
-                      <ul>
-                        UX Design
-                      </ul>
-                      <ul>
-                        Web App
-                      </ul>
-                      <ul>
-                        Client Project
-                      </ul>
-                    </li>
-                  </div>
-                  <!-- Tag Section -->
-                  <div class="tag-section technologies">
-                    <li>
-                      <ul>
-                        Miro
-                      </ul>
-                      <ul>
-                        Figma
-                      </ul>
-                      <ul>
-                        Canva
-                      </ul>
-                    </li>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <!-- View More Project Tile -->
-          
+        <featured-component></featured-component>
         </div>
       </section>
     </main>
