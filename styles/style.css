@@ -199,25 +199,6 @@ header div h1, header div h2 {
   padding: 0.5rem;
 }
 
-nav {
-  display: flex;
-  padding: 0.5rem;
-}
-
-nav ul {
-  display: flex;
-  list-style: none;
-}
-
-nav ul li {
-  padding-left: 1.5rem;
-}
-
-.logo {
-  width: 3rem;
-  padding: 0.5rem
-}
-
 /* Main Sections */
 
 main {

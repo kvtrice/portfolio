@@ -10,6 +10,8 @@
       href="https://fonts.googleapis.com/css2?family=Arapey:ital@1&family=Poppins:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
       rel="stylesheet"
     />
+    <script src="components/header.js" type="text/javascript" defer></script>
+    <script src="components/footer.js" type="text/javascript" defer></script>
     <link rel="stylesheet" href="styles/reset.css" />
     <link rel="stylesheet" href="styles/style.css" />
     <title>Talk to Maple</title>
@@ -17,26 +19,9 @@
   <body>
     <!-- Header -->
     <div class="talktomaple-header-wrapper">
-      <header class="talktomaple-page" id="top">
-        <div>
-          <a href="index.html">
-            <img class="logo" src="images/logo/K White.png" />
-          </a>
-        </div>
-        <nav>
-          <ul>
-            <li>
-              <a href="index.html">Home</a>
-            </li>
-            <li>
-              <a href="about.html">About</a>
-            </li>
-            <li>
-              <a href="work.html">Work</a>
-            </li>
-          </ul>
-        </nav>
-      </header>
+      <div class="talktomaple-page">
+        <header-component></header-component>
+      </div>
     </div>
 
     <!-- Main Content -->
@@ -1005,63 +990,7 @@
     </main>
 
     <!-- Footer -->
-    <div class="footer-wrapper">
-      <footer id="bottom">
-        <div class="footer-flex">
-          <div class="footer-connect">
-            <h2 class="heading">Let's connect</h2>
-            <div class="social-images">
-              <a href="https://github.com/kvtrice" target="_blank"
-                ><img
-                  src="images/icons/social_icons/colour_handdrawn/githubround_colour_handdrawn.png"
-                  alt="Github"
-              /></a>
-              <a
-                href="https://www.linkedin.com/in/katmountford/"
-                target="_blank"
-                ><img
-                  src="images/icons/social_icons/colour_handdrawn/linkedin_colour_handdrawn.png"
-                  alt="LinkedIn"
-              /></a>
-              <a href="mailto:katricemountford@gmail.com" target="_blank"
-                ><img
-                  src="images/icons/social_icons/colour_handdrawn/email_colour_handdrawn.png"
-                  alt="Email"
-              /></a>
-            </div>
-          </div>
-          <div class="footer-nav-links">
-            <div class="footer-learn-more">
-              <h3 class="sub-heading">Learn more</h3>
-              <ul>
-                <li>
-                  <a href="index.html">Home</a>
-                </li>
-                <li>
-                  <a href="about.html">About</a>
-                </li>
-                <li>
-                  <a href="work.html">Work</a>
-                </li>
-              </ul>
-            </div>
-            <div class="footer-my-work">
-              <h3 class="sub-heading">My work</h3>
-              <ul>
-                <li>
-                  <a href="talktomaple.html">AI Journaling</a>
-                </li>
-                <li>
-                  <a href="atonce.html">Marketplace Re-design</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="copyright">
-          <p>Copyright &copy; 2023 Kat Mountford</p>
-        </div>
-      </footer>
-    </div>
+    <footer-component></footer-component>
+    
   </body>
 </html>
