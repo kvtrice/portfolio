@@ -5,55 +5,6 @@ class Header extends HTMLElement {
 
   connectedCallback() {
     this.innerHTML = `
-            <style>        
-                nav {
-                    display: flex;
-                    padding: 0.5rem;
-                }
-                
-                nav ul {
-                    display: flex;
-                    list-style: none;
-                }
-                
-                nav ul li {
-                    padding-left: 1.5rem;
-                    list-style: none;
-                }
-                
-                .logo {
-                    width: 3rem;
-                    padding: 0.5rem;
-                }
-
-                .dropdown-menu {
-                    display: none;
-                    position: absolute;
-                    width: auto;
-                    padding: 0.5rem;
-                    background-color: #ffffff50;
-                    border-radius: 5px;
-                }
-
-                nav ul li div ul li {
-                    padding-left: 0;
-                }
-
-                .dropdown-bg {
-                    padding-top: 0.5rem;
-                }
-
-                .dropdown-menu li {
-                    padding: 0.2rem;
-                    white-space: nowrap;
-                }
-
-                .dropdown:hover .dropdown-menu {
-                    display: block;
-                }
-
-            </style>
-
             <header id="top">
             <div>
             <a href="index.html">
