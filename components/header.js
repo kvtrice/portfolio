@@ -1,10 +1,10 @@
 class Header extends HTMLElement {
-    constructor() {
-      super();
-    }
+  constructor() {
+    super();
+  }
 
-    connectedCallback() {
-        this.innerHTML = `
+  connectedCallback() {
+    this.innerHTML = `
             <style>        
                 nav {
                     display: flex;
@@ -18,18 +18,34 @@ class Header extends HTMLElement {
                 
                 nav ul li {
                     padding-left: 1.5rem;
+                    list-style: none;
                 }
                 
                 .logo {
                     width: 3rem;
-                    padding: 0.5rem
+                    padding: 0.5rem;
                 }
 
                 .dropdown-menu {
                     display: none;
                     position: absolute;
-                    background-color: #fff;
-                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                    width: auto;
+                    padding: 0.5rem;
+                    background-color: #ffffff50;
+                    border-radius: 5px;
+                }
+
+                nav ul li div ul li {
+                    padding-left: 0;
+                }
+
+                .dropdown-bg {
+                    padding-top: 0.5rem;
+                }
+
+                .dropdown-menu li {
+                    padding: 0.2rem;
+                    white-space: nowrap;
                 }
 
                 .dropdown:hover .dropdown-menu {
@@ -45,26 +61,27 @@ class Header extends HTMLElement {
             </a>
             </div>
             <nav>
-            <ul>
-                <li>
-                <a href="index.html">Home</a>
-                </li>
-                <li>
-                <a href="about.html">About</a>
-                </li>
-                <li class="drop-down">
-                    <a href="work.html">Work</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Talk to Maple</a></li>
-                        <li><a href="#">At Once</a></li>
-                    </ul>
-                </li>
-            </ul>
+                <ul>
+                    <li>
+                    <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                    <a href="about.html">About</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Work</a>
+                        <div class="dropdown-bg">
+                            <ul class="dropdown-menu">
+                                <li><a href="talktomaple.html">Talk to Maple</a></li>
+                                <li><a href="atonce.html">At Once</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
             </nav>
         </header>
         `;
-      }
   }
+}
 
-  customElements.define('header-component', Header);
-
+customElements.define("header-component", Header);

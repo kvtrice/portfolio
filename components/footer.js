@@ -105,9 +105,6 @@ class Footer extends HTMLElement {
                             <li>
                             <a href="about.html">About</a>
                             </li>
-                            <li>
-                            <a href="work.html">Work</a>
-                            </li>
                         </ul>
                         </div>
                         <div class="footer-my-work">
