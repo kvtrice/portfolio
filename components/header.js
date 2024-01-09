@@ -1,10 +1,15 @@
 class Header extends HTMLElement {
-  constructor() {
-    super();
-  }
+    constructor() {
+        super();
+    }
 
-  connectedCallback() {
-    this.innerHTML = `
+    connectedCallback() {
+        this.render();
+        this.setupEventListeners();
+    }
+
+    render() {
+        this.innerHTML = `
             <header id="top">
             <div>
             <a href="index.html">
@@ -14,10 +19,10 @@ class Header extends HTMLElement {
             <nav>
                 <ul>
                     <li>
-                    <a href="index.html">Home</a>
+                        <a href="index.html">Home</a>
                     </li>
                     <li>
-                    <a href="about.html">About</a>
+                        <a href="about.html">About</a>
                     </li>
                     <li class="dropdown">
                         <a href="#">Work</a>
@@ -29,10 +34,24 @@ class Header extends HTMLElement {
                         </div>
                     </li>
                 </ul>
+                <div id="hamburger-menu" class="hamburger-menu">
+                    <a href="mob-hamburger.html">
+                        <img class="menu-icon" src="images/icons/menu_icons/menu.png" alt="Hamburger Menu" />
+                    </a>
+                </div>
             </nav>
         </header>
-        `;
-  }
+    `;
+    }
+
+    setupEventListeners() {
+        const hamburgerMenu = this.querySelector("#hamburger-menu");
+        hamburgerMenu.addEventListener("click", () => {
+          const mobileMenu = document.querySelector('.expanded-menu');
+          mobileMenu.classList.toggle('active');
+        });
+      }
+      
 }
 
 customElements.define("header-component", Header);

@@ -81,7 +81,7 @@ figcaption {
   font-size: 0.8rem;
 }
 
-.sub-heading, .summary-block h3 {
+.sub-heading, .summary-block h3, .expanded-menu ul p {
   font-family: 'BodyGrotesqueFit', sans-serif;
   font-size: 0.75rem;
   line-height: 1.6;
@@ -111,47 +111,6 @@ h1 a:hover {
 }
 
 /* Buttons */
-
-.top-bottom-arrows {
-  z-index: 1;
-  position: fixed;
-  right: 2rem;
-  bottom: 2rem;
-  display: flex;
-  flex-direction: column;
-  border: black 1px solid;
-  border-radius: 8px;
-}
-
-.top-bottom-arrows div {
-  border-radius: 8px;
-  background-color: white;
-  transition: 400ms;
-}
-
-.top-bottom-arrows .top {
-  border-radius: 8px 8px 0px 0px;
-}
-
-.top-bottom-arrows .bottom {
-  border-radius: 0px 0px 8px 8px;
-}
-
-.top-bottom-arrows div:hover {
-  background-color: #E9E1FD;
-}
-
-.top-bottom-arrows img {
-  height: 2.5rem;
-  transition: 400ms;
-  padding: 0.5rem;
-  z-index: 1;
-}
-
-.top-bottom-arrows img:hover {
-  transform: scale(1.3);
-  z-index: 1;
-}
 
 button {
   font-family: 'BodyGrotesqueFit', sans-serif;
@@ -205,7 +164,7 @@ header div h1, header div h2 {
   padding: 0.5rem;
 }
 
-/* Nav Component */
+/* Nav Styling */
 
 nav {
   display: flex;
@@ -253,6 +212,65 @@ nav ul li div ul li {
   display: block;
 }
 
+.hamburger-menu {
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none;
+}
+
+
+/* Mobile Hamburger Menu Styling */
+
+.mob-page {
+  background-color: #E9E1FD;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  transition: background-color 0.5s ease;
+}
+
+.mobile-menu {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.expanded-menu {
+  text-align: center;
+  opacity: 1;
+  transition: opacity 2s ease;
+}
+
+.expanded-menu ul p {
+  font-size: 1.2rem;
+  padding-top: 2.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.expanded-menu ul li {
+  font-size: 2.5rem;
+  padding: 1rem;
+}
+
+.close-menu {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.mobile-menu.active {
+  opacity: 1;
+}
+
+.close-icon {
+  transition: transform 0.3s ease;
+}
+
+.expanded-menu.active, .close-icon {
+  transform: rotate(90deg);
+}
+
 /* Footer Component */
 
 .footer-wrapper { /* Extend background colour past the width of the content */
@@ -272,7 +290,6 @@ footer h3 {
   font-weight: bold;
 }
 
-/* Social Connection section */
 .footer-connect h2 {
   margin-bottom: 0.5rem;
 }
@@ -368,6 +385,8 @@ footer p {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  position: relative;
+  z-index: 0;
 }
 
 .work h2 {
@@ -377,14 +396,18 @@ footer p {
 .project-tile-block {
   display: flex;
   justify-content: center;
+  width: 80vw;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 0;
 }
 
 .project-tile-block a:hover {
   text-decoration: none;
 }
 
-.project-tile h3, 
-.view-more-tile h3,
+.project-tile h3,
 .project-tile p,
 .project-tile li {
   font-size: 1rem;
@@ -402,7 +425,7 @@ footer p {
   margin: 1rem;
 }
 
-.project-tile, .view-more-tile {
+.project-tile {
  display: flex;
  position: relative;
  flex-direction: column;
@@ -412,6 +435,7 @@ footer p {
  border-radius: 5px;
  overflow: hidden;
  transition: 400ms;
+ z-index: 0;
 }
 
 .project-type-tag {
@@ -428,11 +452,18 @@ footer p {
  font-size: 0.9rem;
 }
 
-.project-tile:hover, .view-more-tile:hover {
+.project-tile:hover {
   transform: scale(1.05);
+  z-index: 1;
+  position: relative;
+  z-index: 0;
 }
 
-.project-tile img, .view-more-tile img {
+.project-tile a:hover {
+  text-decoration: none;
+}
+
+.project-tile img {
   height: 100%;
   width: 100%;
   object-fit: cover;
@@ -474,7 +505,6 @@ main {
   margin: 0 auto;
 }
 
-/* -- End Global Styles -- */
 
 /* -- Start Index Page Styles -- */
 
@@ -532,20 +562,17 @@ main .home-wrapper {
   from {
     color: white;
     background-color: white;
-    /* border: 0.5px solid black; */
   }
   to {
     background-color:#F7FF9F;
     color: black;
-    /* border: 0.5px solid black; */
   }
 }
-
-/* -- End Index Page Styling */
 
 /* -- Start About Page Styling -- */
 
 /* Main text section with image */
+
 .about {
   margin: 2rem auto;
 }
@@ -671,9 +698,8 @@ main .home-wrapper {
   }
 }
 
-/* -- End About Page Styling */
-
 /* -- Start Project Pages Styling -- */
+
 /* -- Start Global Project Styles -- */
 /* Project Hero and Summary */
 
@@ -809,25 +835,14 @@ strong {
   align-items: center;
 }
 
-.view-more .project-tile-block {
-  width: 80vw;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
 .view-more-heading h2 {
   font-size: 2rem;
   text-align: center;
   padding: 1.5rem;
 }
 
-.view-more .project-tile a:hover {
-  text-decoration: none;
-}
-
-/* -- End Global Project Styles -- */
-
 /* -- Start Individual Project Styles -- */
+
 /* Talk to Maple Project Styling */
 
 .talktomaple {
@@ -881,19 +896,8 @@ strong {
   text-align: center;
 }
 
-/* -- End Project Styles -- */
-
 
 /* -- Start Media Queries -- */
-
-/* Smaller desktops */
-@media screen and (max-width: 1200px) {
-
-  /* Blog Tiles */
-  .blog-tile {
-    width: calc((100% - 4rem) / 2);
-  }
-}
 
 /* Small screens and tablets */
 @media screen and (max-width: 850px) {
@@ -904,13 +908,47 @@ strong {
     font-size: 1.8rem;
   }
 
-  /* Blogs */
-  .blog-tile {
-    width: 100%;
+  .hamburger-menu {
+    display: block;
   }
 
-  .article-wrapper {
-    padding-top: 5rem;
+  .project-tile-block,
+  .top-bottom-arrows {
+      z-index: 10;
+  }
+
+  .menu-icon, .close-icon {
+    width: 80%;
+    height: 80%;
+  }
+
+  /* Header */
+
+  header {
+    flex-direction: row;
+    align-items: center;
+    padding-top: 2rem;
+  }
+
+  nav ul li {
+    padding: 0 0.75rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+
+  nav ul {
+    display: none;
+    width: 100%;
+    text-align: center;
+  }
+
+  nav ul.active {
+    display: flex;
+  }
+
+  .hamburger-menu {
+    display: block;
   }
 
   /* Projects */
@@ -1024,25 +1062,6 @@ strong {
     padding-top: 1.5rem;
   }
 
-  /* Header */
-
-  header {
-    flex-direction: column;
-    align-items: center;
-    padding: 1rem 0;
-  }
-
-  nav ul li {
-    padding: 0 0.75rem;
-    font-size: 1.2rem;
-    font-weight: bold;
-    text-decoration: underline;
-  }
-
-  nav ul {
-    margin: 0;
-    padding: 0;
-  }
 
 }
 
@@ -1051,7 +1070,7 @@ strong {
 
   /* Global */
 
-  header, footer, .hero, .work, .about, .skills, .interests, .blog, .read-more {
+  header, footer, .hero, .work, .about, .skills, .interests {
     width: 90%;
   }
 
