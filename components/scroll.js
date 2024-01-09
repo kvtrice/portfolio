@@ -7,17 +7,17 @@ class Scroll extends HTMLElement {
         this.innerHTML = `
             <div class="top-bottom-arrows">
                 <div class="top">
-                <a href="#" onclick="scrollToTop()">
+                <a href="#top">
                     <img
-                    src="/images/icons/social_icons/handdrawn/top.png"
+                    src="/images/icons/scroll_icons/scroll-up.png"
                     alt="Arrow to top of screen"
                     />
                 </a>
                 </div>
                 <div class="bottom">
-                <a href="#" onclick="scrollToBottom()">
+                <a href="#bottom">
                     <img
-                    src="images/icons/social_icons/handdrawn/bottom.png"
+                    src="images/icons/scroll_icons/scroll-down.png"
                     alt="Arrow to bottom of screen"
                     />
                 </a>
@@ -28,18 +28,4 @@ class Scroll extends HTMLElement {
   }
 
   customElements.define('scroll-component', Scroll);
-
-  function scrollToTop() {
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-    });
-}
-
-function scrollToBottom() {
-    window.scrollTo({
-        top: document.body.scrollHeight,
-        behavior: 'smooth'
-    });
-}
 

@@ -13,19 +13,19 @@ class Footer extends HTMLElement {
                         <div class="social-images">
                         <a href="https://github.com/kvtrice" target="_blank"
                             ><img
-                            src="images/icons/social_icons/colour_handdrawn/githubround_colour_handdrawn.png"
+                            src="images/icons/social_icons/github.png"
                             alt="Github"
                         /></a>
                         <a
                             href="https://www.linkedin.com/in/katmountford/"
                             target="_blank"
                             ><img
-                            src="images/icons/social_icons/colour_handdrawn/linkedin_colour_handdrawn.png"
+                            src="images/icons/social_icons/linkedin.png"
                             alt="LinkedIn"
                         /></a>
                         <a href="mailto:katricemountford@gmail.com" target="_blank"
                             ><img
-                            src="images/icons/social_icons/colour_handdrawn/email_colour_handdrawn.png"
+                            src="images/icons/social_icons/email.png"
                             alt="Email"
                         /></a>
                         </div>

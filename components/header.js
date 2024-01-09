@@ -11,9 +11,9 @@ class Header extends HTMLElement {
     render() {
         this.innerHTML = `
             <header id="top">
-            <div>
+            <div class="header">
             <a href="index.html">
-                <img class="logo" src="images/logo/K White.png" />
+                <img class="logo" src="images/logo/logo-black.png"/>
             </a>
             </div>
             <nav>
@@ -43,14 +43,6 @@ class Header extends HTMLElement {
         </header>
     `;
     }
-
-    setupEventListeners() {
-        const hamburgerMenu = this.querySelector("#hamburger-menu");
-        hamburgerMenu.addEventListener("click", () => {
-          const mobileMenu = document.querySelector('.expanded-menu');
-          mobileMenu.classList.toggle('active');
-        });
-      }
       
 }
 

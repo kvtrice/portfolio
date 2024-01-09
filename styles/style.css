@@ -59,15 +59,24 @@ h1, .heading, .project-heading h2 {
   font-size: 2.25rem;
 }
 
-h1  {
-  font-size: 3.5rem;
+.intro h2 {
+  font-family: 'OhnoBlazeFace', sans-serif;
+}
+
+.title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.header a:hover {
+  text-decoration: none;
 }
 
 .footer-connect .heading {
   padding-bottom: 1rem;
 }
 
-h2, h3, li {
+h2, h3, li, .title {
   font-family: 'BodyGrotesqueFit', sans-serif;
 }
 
@@ -179,11 +188,12 @@ nav ul {
 nav ul li {
   padding-left: 1.5rem;
   list-style: none;
+  font-size: 1.1rem;
 }
 
 .logo {
-  width: 3rem;
-  padding: 0.5rem;
+  width: 2.5rem;
+  padding: 0.5rem, 0.5rem, 0,5rem, 0;
 }
 
 .dropdown-menu {
@@ -226,7 +236,6 @@ nav ul li div ul li {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
-  transition: background-color 0.5s ease;
 }
 
 .mobile-menu {
@@ -239,36 +248,22 @@ nav ul li div ul li {
 
 .expanded-menu {
   text-align: center;
-  opacity: 1;
-  transition: opacity 2s ease;
 }
 
 .expanded-menu ul p {
-  font-size: 1.2rem;
+  font-size: 1rem;
   padding-top: 2.5rem;
   padding-bottom: 0.5rem;
 }
 
 .expanded-menu ul li {
-  font-size: 2.5rem;
+  font-size: 2rem;
   padding: 1rem;
 }
 
 .close-menu {
   font-size: 1.5rem;
   cursor: pointer;
-}
-
-.mobile-menu.active {
-  opacity: 1;
-}
-
-.close-icon {
-  transition: transform 0.3s ease;
-}
-
-.expanded-menu.active, .close-icon {
-  transform: rotate(90deg);
 }
 
 /* Footer Component */
@@ -295,7 +290,13 @@ footer h3 {
 }
 
 .social-images img {
-  width: 4rem;
+  width: 3.5rem;
+  padding-right: 0.8rem;
+  transition: 400ms ease-in-out;
+}
+
+.social-images img:hover {
+  transform: scale(1.2)
 }
 
 .footer-flex {
@@ -326,7 +327,8 @@ footer h3 {
 }
 
 .footer-learn-more ul li, .footer-my-work ul li {
-  padding-bottom: 0.3rem;
+  padding-bottom: 0.5rem;
+  font-size: 1.1rem;
 }
 
 footer p {
@@ -344,32 +346,11 @@ footer p {
   bottom: 2rem;
   display: flex;
   flex-direction: column;
-  border: black 1px solid;
-  border-radius: 8px;
-}
-
-.top-bottom-arrows div {
-  border-radius: 8px;
-  background-color: white;
-  transition: 400ms;
-}
-
-.top-bottom-arrows .top {
-  border-radius: 8px 8px 0px 0px;
-}
-
-.top-bottom-arrows .bottom {
-  border-radius: 0px 0px 8px 8px;
-}
-
-.top-bottom-arrows div:hover {
-  background-color: #E9E1FD;
 }
 
 .top-bottom-arrows img {
   height: 2.5rem;
   transition: 400ms;
-  padding: 0.5rem;
   z-index: 1;
 }
 
@@ -441,7 +422,8 @@ footer p {
 .project-type-tag {
   width: fit-content;
   border-radius: 2px;
-  background-color:#F7FF9F;
+  color: white;
+  background-color: black;
   position: absolute;
   left: -1rem;
   top: 0.1rem;
@@ -536,7 +518,7 @@ main .home-wrapper {
   margin: 0.5rem;
 }
 
-.intro h1 {
+.intro h2 {
   font-size: 3.5rem;
   margin-bottom: 2rem;
   line-height: 1.1;
@@ -554,18 +536,17 @@ main .home-wrapper {
   font-family: 'Arapey', serif;
   font-style: italic;
   font-size: 1.5rem;
-  border-radius: 2px;
+  border-radius: 50px;
   animation: highlight 3s forwards;
 }
 
 @keyframes highlight {
   from {
-    color: white;
-    background-color: white;
+    color: #E9E1FD;
   }
   to {
-    background-color:#F7FF9F;
-    color: black;
+    background-color: black;
+    color: white;
   }
 }
 
@@ -704,7 +685,7 @@ main .home-wrapper {
 /* Project Hero and Summary */
 
 .no-bg, .bg {
-  /* width: 80%; */
+  width: 80%;
   max-width: 800px;
   margin: 0 auto;
 }
@@ -932,7 +913,7 @@ strong {
 
   nav ul li {
     padding: 0 0.75rem;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: bold;
     text-decoration: underline;
   }
@@ -1011,7 +992,7 @@ strong {
     text-align: center;
   }
 
-  .intro h1 {
+  .intro h2 {
     padding: 5rem 0 0.25rem;
     font-size: 3rem;
   }
@@ -1091,7 +1072,7 @@ strong {
   
   /* Index Hero */
 
-  .intro h1 {
+ .intro h2 {
     padding: 5rem 0 0.25rem;
     font-size: 2rem;
   }
